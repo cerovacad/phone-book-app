@@ -67,16 +67,19 @@ class ModalRaw extends React.Component {
             
               <div className="row">
                 <div className="input-field col s12">
-                  <input id="firstName" name="firstName" type="text" className="validate" required/>
-                  <label htmlFor="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" className="validate" required/>
+                <label htmlFor="firstName">First Name</label>
+                <small><em className="grey-text lighten-2">(Minimum three chracters)</em></small>
                 </div>
                 <div className="input-field col s12">
                   <input id="lastName" name="lastName" type="text" className="validate" required/>
                   <label htmlFor="lastName">Last Name</label>
+                  <small><em className="grey-text lighten-2">(Minimum three chracters)</em></small>
                 </div>
                 <div className="input-field col s12">
                   <input id="phone" name="phone" type="number" className="validate" required/>
                   <label htmlFor="phone">Phone</label>
+                  <small><em className="grey-text lighten-2">(Minimum four digits)</em></small>
                 </div>
               </div>
 

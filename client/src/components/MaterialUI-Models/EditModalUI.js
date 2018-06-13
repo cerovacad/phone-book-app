@@ -99,6 +99,7 @@ class ModalRaw extends React.Component {
                     className="validate" 
                     required
                   />
+                  <small><em className="grey-text lighten-2">(Min three chracters)</em></small>
                 </div>
                 <div className="input-field col s12">
                   <input 
@@ -110,6 +111,7 @@ class ModalRaw extends React.Component {
                     className="validate" 
                     required
                   />
+                  <small><em className="grey-text lighten-2">(Min three chracters)</em></small>
                 </div>
                 <div className="input-field col s12">
                   <input 
@@ -121,7 +123,9 @@ class ModalRaw extends React.Component {
                     className="validate" 
                     required
                   />
+                  <small><em className="grey-text lighten-2">(Min four digits)</em></small>
                 </div>
+
               </div>
               
               <button 
