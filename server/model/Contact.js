@@ -48,8 +48,10 @@ class Phone {
     }
     update(id, data, callback){
 
-        const firstName = data.firstName.trim()
-        const lastName = data.lastName.trim()
+        let firstName = data.firstName.trim()
+        firstName = firstName.replace(/^\w/, c => c.toUpperCase());
+        let lastName = data.lastName.trim()
+        lastName = lastName.replace(/^\w/, c => c.toUpperCase());
         const phone = data.phone.trim()
 
         let sql = 'UPDATE ?? SET first_name=?, last_name=?, phone=? WHERE id=?'

@@ -37,13 +37,23 @@ class ModalRaw extends React.Component {
           onClose={this.props.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
-            <h4>Are you shure you want to deletet?</h4>
+            <h4>Are you sure you want to delete contact?</h4>
             <p>{this.props.contact.first_name + ' ' + this.props.contact.last_name}</p>
             <p>{this.props.contact.phone}</p>
-            <button onClick={() => { this.props.handleDelete(this.props.contact.id) }} className="btn waves-effect waves-light red modal-close" type="submit" name="action">
+            <button 
+              onClick={() => { this.props.handleDelete(this.props.contact.id) }} 
+              className="btn waves-effect waves-light red modal-close" 
+              type="submit" 
+              name="action"
+            >
                 Delete
             </button>
-            <button className="btn waves-effect waves-light green modal-close" onClick={this.props.handleClose} type="submit" name="action">
+            <button 
+              className="btn waves-effect waves-light green modal-close" 
+              onClick={this.props.handleClose} 
+              type="submit" 
+              name="action"
+            >
                 Cancel
             </button>
           </div>
