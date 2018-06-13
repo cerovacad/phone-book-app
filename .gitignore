@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-db_config.js
 
 # testing
 /coverage
